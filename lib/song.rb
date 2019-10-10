@@ -27,7 +27,7 @@ class Song
     @@genres.uniq
   end 
   
-  def self.genre_count
+  #def self.genre_count
   #   hash = {}
   #   if hash.has_key?(@@genres)
   #     hash[@@genres] << @@count
@@ -36,7 +36,11 @@ class Song
   # end 
   # end 
   
-  
+  def self.genre_count
+    @@genres.inject(Hash.new(0)){
+      |genre,i|  genre[i] +=1 ; genre
+    }
+    end
   
   
 end 
