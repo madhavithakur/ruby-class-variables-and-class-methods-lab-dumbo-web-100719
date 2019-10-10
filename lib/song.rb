@@ -31,6 +31,8 @@ class Song
     # @@genres.inject(Hash.new(0)){
     #   |genre,i|  genre[i] +=1 ; genre
     # }
+    @@genres.each {|ele| hash[ele] += 1}
+    hash
     end
   
   def self.artist_count 
