@@ -28,12 +28,12 @@ class Song
   end 
   
   def self.genre_count
-    hash = {}
-    if hash.has_key?(@@genres)
-      hash[@@genres] << @@count
-    else
-    hash[@@genres] = @@count
-  end 
-  end 
+  #   hash = {}
+  #   if hash.has_key?(@@genres)
+  #     hash[@@genres] << @@count
+  #   else
+  #   hash[@@genres] = @@count
+  # end 
+  # end 
   
 end 
