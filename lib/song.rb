@@ -40,7 +40,7 @@ class Song
     @artist.each do |ele|
       hash[ele] += 1
     end 
-    count
+    hash
   end 
   
 end 
