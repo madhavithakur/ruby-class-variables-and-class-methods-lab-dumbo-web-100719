@@ -37,6 +37,10 @@ class Song
     # @@artists.inject(Hash.new(0)){|artist, i| artist[i] += 1; # artist}
     hash = Hash.new(0)
     
+    @artist.each do |ele|
+      hash[ele] += 1
+    end 
+    count
   end 
   
 end 
